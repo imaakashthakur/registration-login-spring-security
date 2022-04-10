@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/logindemo
+    username: root
+    password: rootroot
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+storm:
+  jwtSecret: stormSecret
+  jwtExpirationMs: 100000
+  jwtCookie: stormCookie
